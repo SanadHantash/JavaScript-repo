@@ -22,10 +22,10 @@ window.alert(number);
 let num1 = window.prompt("Q3." + "please enter number");
 let num2 = window.prompt("Q3." + "please enter another number");
 
-if (num1>=num2) { 
+if (num1>num2) { 
     window.alert(num2);
     window.alert(num1);
-} else if (num2>=num1) {
+} else if (num2>num1) {
     window.alert(num1);
     window.alert(num2);
 }
@@ -35,18 +35,18 @@ let num4 = window.prompt("Q4." + "please enter another number");
 
 if (num3>=num4) { 
     window.alert(num3);
-    } else  {
+    } else if (num4>=num3)  {
         window.alert(num4);
     }
 
 //Q5
 let num5 = window.prompt("Q5." + "please enter number");
 let num6 = window.prompt("Q5." + "please enter another number");
-let sum = num5 + num6;
-window.alert((sum));
+let sum = parseInt(num5) + parseInt(num6);
+window.alert(parseInt(sum));
 
 //Q6
-let num7=window.prompt("please enter number from 1 to 9") * 1;
+let num7=window.prompt("please enter number between 1 and 9") * 1;
 switch (num7) {
     case 1:
         window.alert("ONE");
@@ -79,3 +79,76 @@ switch (num7) {
         window.alert("PLEASE TRY AGAIN");
         break;
 }
+
+
+//Q7.
+
+for (var i = 0; i <= 5; i++) {
+    window.alert(i);
+}
+
+//Q8.
+var numbers = "";
+
+for (var i = 0; i <= 5; i++) {
+    numbers += i + " ";
+}
+
+window.alert(numbers);
+
+
+//Q9.
+
+for (var i = 0; i <= 20; i+=3) {
+    console.log(i);
+}
+
+//Q10.
+
+let num8 = prompt("Q10."+"enter number between 0 and 100");
+
+while (num8>100 || num8<0) {
+        // num8 = alert("please enter correct number");
+        console.log("Q10."+"please enter number between 0 and 100");
+        num8=prompt("enter number between 0 and 100");
+}
+
+
+//Q11.
+
+let something = prompt("Q11."+"enter something");
+let word="";
+    if(isNaN(something)){
+    for (let i = something.length-1; i>=0; i--) {
+        word = word +something.charAt(i);
+       
+    }
+    }
+    alert(word);
+
+
+
+//Q12.
+
+let num9 = prompt ("Q12."+"please enter number")
+let nsum = 0;
+for(let i=0;i<=num9;i++){
+    nsum+=i;
+}
+alert(nsum);
+
+//Q13.
+
+let num10 = prompt ("Q13."+"please enter number")
+let asum = 0;
+for(let i=0;i<=num10;i++){
+    asum+=i;
+}
+
+let averages = asum /(num10+1);
+alert(averages);
+
+
+
+
+
