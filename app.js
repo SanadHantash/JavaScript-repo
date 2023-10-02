@@ -1,26 +1,26 @@
-/*
-Q1:
-1. -9*3 => -27
-2. "valye is " + 50 => value is 50
-3. 17 % 5 => 2
-4. 5 % 17 => 5
-5. 5/10 => 0.5
-6. (4==4) => True
-7. (4 != 5) => True
-8. (7 <= 8) => True
-9. Math.ceil(2.4) => 3
-9. Math.floor(6.3) => 6
-*/
+// /*
+// Q1:
+// 1. -9*3 => -27
+// 2. "valye is " + 50 => value is 50
+// 3. 17 % 5 => 2
+// 4. 5 % 17 => 5
+// 5. 5/10 => 0.5
+// 6. (4==4) => True
+// 7. (4 != 5) => True
+// 8. (7 <= 8) => True
+// 9. Math.ceil(2.4) => 3
+// 9. Math.floor(6.3) => 6
+// */
 
 
-//Q2:
+// //Q2:
 
 let number = window.prompt("Q2." + "please enter number");
 window.alert(number);
 
-//Q3.
-let num1 = window.prompt("Q3." + "please enter number");
-let num2 = window.prompt("Q3." + "please enter another number");
+ //Q3.
+ let num1 = window.prompt("Q3." + "please enter number");
+ let num2 = window.prompt("Q3." + "please enter another number");
 
 if (num1>num2) { 
     window.alert(num2);
@@ -29,6 +29,7 @@ if (num1>num2) {
     window.alert(num1);
     window.alert(num2);
 }
+
 //Q4.
 let num3 = window.prompt("Q4." + "please enter number");
 let num4 = window.prompt("Q4." + "please enter another number");
@@ -45,7 +46,7 @@ let num6 = window.prompt("Q5." + "please enter another number");
 let sum = parseInt(num5) + parseInt(num6);
 window.alert(parseInt(sum));
 
-//Q6
+// //Q6
 let num7=window.prompt("please enter number between 1 and 9") * 1;
 switch (num7) {
     case 1:
@@ -81,7 +82,7 @@ switch (num7) {
 }
 
 
-//Q7.
+// //Q7.
 
 for (var i = 0; i <= 5; i++) {
     window.alert(i);
@@ -94,24 +95,26 @@ for (var i = 0; i <= 5; i++) {
     numbers += i + " ";
 }
 
-window.alert(numbers);
+window.alert("Q8." + numbers);
 
 
 //Q9.
 
+let n=""
 for (var i = 0; i <= 20; i+=3) {
-    console.log(i);
+    n+=i+" ";
 }
-
+window.alert(n);
 //Q10.
 
 let num8 = prompt("Q10."+"enter number between 0 and 100");
 
 while (num8>100 || num8<0) {
-        // num8 = alert("please enter correct number");
-        console.log("Q10."+"please enter number between 0 and 100");
-        num8=prompt("enter number between 0 and 100");
+
+        num8=prompt("please enter correct number");
 }
+
+alert(num8);
 
 
 //Q11.
@@ -119,10 +122,10 @@ while (num8>100 || num8<0) {
 let something = prompt("Q11."+"enter something");
 let word="";
     if(isNaN(something)){
-    for (let i = something.length-1; i>=0; i--) {
-        word = word +something.charAt(i);
-       
+    word = true;
     }
+    else{
+    word =   fale;
     }
     alert(word);
 
@@ -139,14 +142,17 @@ alert(nsum);
 
 //Q13.
 
-let num10 = prompt ("Q13."+"please enter number")
-let asum = 0;
-for(let i=0;i<=num10;i++){
-    asum+=i;
-}
 
-let averages = asum /(num10+1);
-alert(averages);
+sum=0;
+let avg ="";
+let num=prompt("entar nambar :");
+for(i=0;i<=num;i++)
+{
+    sum=sum+i;
+
+}
+avg=sum/i;
+window.alert(avg);
 
 
 
